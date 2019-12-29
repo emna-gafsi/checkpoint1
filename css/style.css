@@ -97,7 +97,24 @@ ul.menu-header {
     list-style-type: none;
 }
 .items-cours {
+    background: url(../res/cours1.png);
     margin: 15px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+.items-cours:hover {
+    background-color: black;
+    opacity: 0.5;
+}
+.items-cours:hover .link-cours{
+    display: block;
+
+}
+button.link-cours {
+    margin: 0 auto;
+    display: none;
 }
 .coures_block {
     display: flex;
