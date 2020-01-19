@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>  <link rel="stylesheet" type="text/css" href="css/style.css" /> </head>
+    <head>  <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    
     <body>
                 <nav class="nav_style">
                                 <img src="res/logo.png" alt="logo">
@@ -60,18 +63,18 @@
                         
                     
                     <div class="block-comment">
-         <button class="btn-style-courses">b</button>
-         <button class="btn-style-courses">i</button>
-         <button class="btn-style-courses">underline</button>
-         <select name="pixel" class="btn-style-courses ">
-            <option>20px </option>
-            <option>30px </option>
-            <option>40px </option>
+         <button class="btn-style-courses"  onclick="Bold()">b</button>
+         <button class="btn-style-courses" onclick="italique()">i</button>
+         <button class="btn-style-courses" onclick="underline()" >underline</button>
+         <select name="pixel" class="btn-style-courses" id="text_size" onchange="size_change()">
+            <option value="20px">20px </option>
+            <option value="30px">30px </option>
+            <option value="40px">40px </option>
          </select>
-         <select name="fonts" class="btn-style-courses">
-            <option>arial </option>
-            <option>verdana </option>
-            <option>geneva </option>
+         <select name="fonts" id="btn-font-family" class="btn-style-courses"onchange="font_change()">
+            <option value="arial">arial </option>
+            <option value="verdana">verdana </option>
+            <option value="">geneva </option>geneva
          </select>
          <br>
         <textarea name="commentaire" id="comment" cols="80" rows="5"></textarea>
