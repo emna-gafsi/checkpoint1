@@ -140,3 +140,9 @@ a.link-cours:hover {
 .bg-home img {
     width: 100%;
 }
+.intro{
+    font-weight: bold;
+}
+#comment{
+    max-width: 500px;
+}
